@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surpresa para minha esposa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Imagem do WhatsApp de 2025-03-08 à(s) 15.19.34_1a0d3d48.jpg" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            max-width: 100vw;
+        }
+        #botao-surpresa {
+            background-color: #333;
+            color: #f0f0f0;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: 2px solid #555;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+            padding: 15px 35px;
+            z-index: 10;
+        }
+        #botao-surpresa:hover {
+            background-color: #555;
+        }
+        #conteudo {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+        #conteudo.show {
+            opacity: 1;
+        }
+        h1 {
+            color: #9c0404;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transform: scale(0);
+            transition: transform 0.5s ease-in-out;
+            font-size: 2em;
+            word-wrap: break-word;
+        }
+        h1.show {
+            transform: scale(1);
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            word-wrap: break-word;
+        }
+        p.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        #foto-amor {
+            width: 90%;
+            max-width: 500px;
+            border: 5px solid #9c0404;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        #foto-amor.show {
+            opacity: 1;
+        }
+        #texto-amor {
+            margin: 20px;
+            white-space: pre-line;
+            word-wrap: break-word;
+        }
+        #musica {
+            margin-top: 0%;
+            transform: translateX(0);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        #musica.show {
+            opacity: 1;
+        }
+        .coracao {
+            font-size: 60px;
+            color: #9c0404;
+            animation: pulsate 2s infinite ease-in-out;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        @keyframes pulsate {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        #rodape {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 0;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+        #mensagem-amor {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300%;
+        }
+        #mensagem-final {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media (max-width:900px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="botao-surpresa">Clique aqui</button>
+    <div id="conteudo">
+        <h1>EU TE AMO AMOR</h1>
+        <img id="foto-amor" src="imagens/Imagem do WhatsApp de 2025-03-08 à(s) 15.14.01_3b938263.jpg" alt="Minha esposa amada">
+        <p id="texto-amor">
+            Layla, feliz dia das mulheres! Saiba que você é a mulher mais impressionante e perfeita que existe.
+            Você tem uma beleza inexplicável, porque nem os melhores filósofos iriam entender tanta perfeição. Eu te quero para sempre, viver ao seu lado.
+            Eu te admiro em tudo, até nos mínimos detalhes, porque reconheço a guerreira que você é.
+            Enfim, saiba que eu te amo muito e você é uma mulher incrível. Seu olhar me fascina, você ilumina minha vida, você é importante.
+        </p>
+        <div id="musica">
+            <audio controls style="width: 100%;">
+                <source src="audio/Áudio do WhatsApp de 2025-03-08 à(s) 16.13.15_e0b36d8e.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio amor kkkkkk
+            </audio>
+        </div>
+        <p id="mensagem-amor"><b>EU TE AMO MINHA MULHER</b></p>
+        <div class="coracao">❤️</div>
+        <p id="mensagem-final">Feito por Marcos Willian seu amor</p>
+    </div>
+    <div id="rodape">
+        <p>Feito por Marcos Willian seu amor</p>
+    </div>
+    <script>
+        document.getElementById("botao-surpresa").addEventListener("click", function() {
+            const conteudo = document.getElementById("conteudo");
+            conteudo.classList.add("show");
+            document.querySelector("h1").classList.add("show");
+            document.getElementById("texto-amor").classList.add("show");
+            document.getElementById("foto-amor").classList.add("show");
+            document.getElementById("musica").classList.add("show");
+            document.getElementById("mensagem-amor").classList.add("show");
+            document.getElementById("mensagem-final").classList.add("show");
+            this.style.display = "none";
+        });
+    </script>
+</body>
+</html>
